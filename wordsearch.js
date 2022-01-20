@@ -8,6 +8,30 @@ const wordSearch = (letters, word) => {
 
   const horizontalJoin = letters.map((ls) => ls.join(""));
 
+  // constructing a matrix grid to construct and map out the columns array
+  // const lRows = letters.length;
+  // const lCols = letters[0].length;
+  // let verticalGrid = [];
+
+  // for (let c = 0; c < lCols.length; c++) {
+  //   verticalGrid[c] = Array(lRows);
+  // }
+
+  // for (let r = 0; r < lRows; r++) {
+  //   for (let c = 0; c < lCols; c++) {
+  //     verticalGrid[c][r] = letters[r][c];
+  //   }
+  // }
+  // // should return true if the world is present vertically
+  // const verticalJoin = verticalGrid.map((ls) => ls.join(""));
+
+  // for (l of verticalJoin) {
+  //   if (l.includes(word)) {
+  //     result = true;
+  //     break;
+  //   }
+  // }
+
   // should return true if word is present horizontally
   for (l of horizontalJoin) {
     if (l.includes(word)) {

@@ -42,7 +42,7 @@ describe("#wordSearch()", function () {
     assert.isTrue(result);
   });
 
-  it("should return false if the word matrix is an empty array", function () {
+  it("should return false if the array passed is an empty array", function () {
     const result = wordSearch([], "HELLO");
 
     assert.isFalse(result);
